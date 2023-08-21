@@ -1,0 +1,102 @@
+@import "../../style.scss";
+
+.login {
+  height: 100vh;
+  background-color: rgb(98, 161, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mobile{
+    width: 90%;
+  }
+
+  @include tablet{
+    width: 90%;
+  }
+
+  .card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 600px;
+    overflow: hidden;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+        url("https://townsquare.media/site/712/files/2017/06/Social-Media.jpg?w=980&q=75")
+        center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+      @include mobile{
+        display: none;
+      }
+
+      @include tablet{
+        display: none;
+      }
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      
+      p {
+      }
+
+      span {
+        font-size: 14px;
+      }
+      
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: rgb(4, 0, 239);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+      color: #555;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        input {
+          width: 70%;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 10px;
+        }
+        
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: rgb(4, 0, 239);
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
